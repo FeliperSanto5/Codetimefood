@@ -80,20 +80,22 @@ border-radius: 16px;
 
 .bebidas{
 width: 250px;
-height: 300px;
+height: 335px;
 background: #FCFCFC;
 border-radius: 16px;
 }
 
 .sobremesas{
 width: 250px;
-height: 290px;
+height: 335px;
 background: #FCFCFC;
 border-radius: 16px;
 }
 
 img{
     width: 250px;
+    height: 180px;
+    object-fit: cover;
     border-radius: 16px;
     margin-bottom: 10px;
 }
@@ -164,7 +166,7 @@ footer{
 }
 
 .confirm{
-    width: 10%;
+    width: 30%;
     height: 40px;
     background-color: lightgray;
     border-radius: 30px;
