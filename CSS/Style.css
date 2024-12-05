@@ -133,7 +133,6 @@ footer {
   background-color: gray;
   position: fixed;
   bottom: 0;
-  left: 0;
 }
 
 .botao {
@@ -183,9 +182,17 @@ footer {
   margin-top: 2px;
   align-content: center;
   margin-top: 25px;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .hide {
   display: none;
 }
 
+@media(body){
+  .estrutura{
+    max-width: 400px;
+    max-height: 370px;
+  }
+}
