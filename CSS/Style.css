@@ -30,26 +30,29 @@ nav img {
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding-top: 120px;
+  padding-top: 150px;
+  margin: 1rem;
 }
 
 .container2 {
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding-top: 40px;
+  padding-top: 60px;
+  margin: 1rem;
+
 }
 
 .container3 {
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding-top: 40px;
+  padding-top: 60px;
   margin-bottom: 80px;
 }
 
 h1 {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .categoria1 {
@@ -188,11 +191,4 @@ footer {
 
 .hide {
   display: none;
-}
-
-@media(body){
-  .estrutura{
-    max-width: 400px;
-    max-height: 370px;
-  }
 }

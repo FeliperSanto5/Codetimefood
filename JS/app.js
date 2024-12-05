@@ -1,17 +1,13 @@
 let contador = 0
 let nomePrato
-let valor2prato
 let valorPrato
 let nomeDrink
-let valor2drink
 let valorDrink
 let nomeSobremesa
-let valor2sobremesa
 let valorSobremesa
 function teste(clicado, valor, centavos){
     nomePrato = clicado
     valorPrato = valor
-    valor2prato = centavos
     const selecionado = document.querySelector(".categoria1 .selecionado")
 
 
@@ -30,7 +26,6 @@ function teste(clicado, valor, centavos){
 function drink(clicado, valor, centavos){
     nomeDrink = clicado
     valorDrink = valor
-    valor2drink = centavos
     const selecionado = document.querySelector(".categoria2 .selecionado")
 
 
@@ -49,7 +44,6 @@ function drink(clicado, valor, centavos){
 function sobreMesa(clicado, valor, centavos){
     nomeSobremesa = clicado
     valorSobremesa = valor
-    valor2sobremesa = centavos
     const selecionado = document.querySelector(".categoria3 .selecionado")
 
 
@@ -77,11 +71,11 @@ function continuar(){
     const objetivo = document.querySelector('.botao').innerHTML="Continuar"
 
     const item1 = document.querySelector('.prt')
-    item1.innerHTML="Seu prato: " + nomePrato + " R$ " + valorPrato + "," + valor2prato
+    item1.innerHTML="Seu prato: " + nomePrato + " R$ " + valorPrato;
     const item2 = document.querySelector('.dri')
-    item2.innerHTML="Sua bebida: " + nomeDrink + " R$ " + valorDrink + "," + valor2drink
+    item2.innerHTML="Sua bebida: " + nomeDrink + " R$ " + valorDrink;
     const item3 = document.querySelector('.sob')
-    item3.innerHTML="Sua sobremesa: " + nomeSobremesa + " R$ " + valorSobremesa + "," + valor2sobremesa
+    item3.innerHTML="Sua sobremesa: " + nomeSobremesa + " R$ " + valorSobremesa;
 }
 
 function avancarPagina(){
@@ -90,8 +84,15 @@ function avancarPagina(){
 
     const resumo = document.querySelector('.resumo')
     resumo.classList.remove('hide')
-
-    
-
 }
 
+function direcionarProWhatsapp() {
+    let total = valorPrato + valorDrink + valorSobremesa
+    let numero = "5511949472627";
+    let mensagem = "Olá, gostaria de confirmar meu pedido: ";
+    let mensagemConcatenada = encodeURIComponent(mensagem)
+     +  nomePrato + " R$" + valorPrato + ", " + nomeDrink + " R$" + valorDrink + ", " + nomeSobremesa + " R$" + valorSobremesa + ", " + " Total: R$" + total;
+
+    let urlWhatsApp = "https://wa.me/" + 11949472627 + "?text=" + mensagemConcatenada;
+    window.open(urlWhatsApp, "_blank");
+}
