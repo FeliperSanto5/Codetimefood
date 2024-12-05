@@ -48,6 +48,7 @@ nav img {
   flex-direction: column;
   padding-top: 60px;
   margin-bottom: 80px;
+  margin: 1rem;
 }
 
 h1 {
