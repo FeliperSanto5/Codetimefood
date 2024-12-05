@@ -40,7 +40,6 @@ nav img {
   flex-direction: column;
   padding-top: 60px;
   margin: 1rem;
-
 }
 
 .container3 {
@@ -60,6 +59,7 @@ h1 {
   flex-direction: row;
   width: auto;
   gap: 15px;
+  overflow: auto;
 }
 
 .categoria2 {
@@ -67,6 +67,7 @@ h1 {
   flex-direction: row;
   width: auto;
   gap: 15px;
+  overflow: auto;
 }
 
 .categoria3 {
@@ -74,6 +75,7 @@ h1 {
   flex-direction: row;
   width: auto;
   gap: 15px;
+  overflow: auto;
 }
 
 .pratos {
